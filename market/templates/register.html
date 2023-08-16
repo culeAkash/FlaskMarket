@@ -29,7 +29,11 @@
         {{form.confirm_password.label()}}
         {{form.confirm_password( class="form-control",placeholder="Confirm Password")}}
         <br />
-        {{form.submit(class="btn btn-md btn-block btn-primary")}}
+        <div class="checkbox mb-3">
+            <h6>Already have an account?</h6>
+            <a class="btn btn-sm btn-secondary" href="{{ url_for('login_page') }}">Login</a>
+        </div>
+        {{form.submit(class="btn btn-md btn-block btn-primary mb-2")}}
 
     </form>
 </div>
